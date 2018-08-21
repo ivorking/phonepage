@@ -17,5 +17,7 @@
 * However, for the sake of speed and simplicity, single page JS, HTML, CSS, jQuery solution selected
 * See console log and in-code comments for details of the solution
 
+Developed by Ivor King.
+
 ## Licence
 This source code is subject to a **CC BY-NC-SA 4.0** licence (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International). This licence means this code and images may not be used for commercial purposes.
