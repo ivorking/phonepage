@@ -1,8 +1,23 @@
-body {}
+body {
+  width: 99%;
+  display: inline-flex;
+  font-family: "supra-xlightcondensed";
+}
 
 .leftcolumn, .rightcolumn {
-    width: 48%;
-    margin: 2%;
-    overflow: auto;
-    display: inline-block;
+  width: 48%;
+  margin: 2%;
+  overflow: auto;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "supra-xlightcondensed";
+  src: url("../fonts/Supra-XLightCondensed.otf") format("opentype");
+}
+
+h1 {
+  font-weight: initial;
+  font-size: 29pt;
+  letter-spacing: 1.82px;
 }
