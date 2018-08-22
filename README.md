@@ -13,12 +13,13 @@
 * On selection of a colour or capacity the image will change and the prices will update.
 
 ### Notes on solution
+
+The company website was used as a reference for some aspects of this page, where it was necessary to achieve an exact match to the brief. This was so the task could be completed quickly. Copying source code fromm the company website was kept to a minimum to keep the exercise interesting for everyone concerned.
+
 * For the sake of speed and simplicity, a single page JS, HTML, CSS, jQuery solution has been selected. I have minimised the use of additional libraries and frameworks in the interests of time.
 * I have used a simple liquid layout approach.
 * I have used a font approximation to match the font used (which may be proprietary). Ordinarily I would simply ask the designer which font was used.
 * See console log and in-code comments for details of the solution.
-
-The company website was used as a reference for some aspects of this page, where it was necessary to achieve an exact match to the brief. This was kept to a minimum to keep the exercise interesting for everyone concerned.
 
 ### Features I would add with additional time
 * This solution could be created as a React component, for integration into a larger app/website (this would be the recommended approach). This could also utilise a node.js server for the phone data.
