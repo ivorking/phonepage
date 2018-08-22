@@ -23,8 +23,10 @@ The company website was used as a reference for some aspects of this page, where
 
 ### Features I would add with additional time
 * This solution could be created as a React component, for integration into a larger app/website (this would be the recommended approach). This could also utilise a node.js server for the phone data.
-* Ordinarily I would incorporate bootstrap for CSS styling.
+* If using React I would rewrite the jQuery as pure JS selector statements.
+* Ordinarily I would incorporate bootstrap for CSS styling, but for simplicity I did not implement Bootstrap here.
 * For exact reproduction of element positions I would use a more time consuming fixed width layout, with changes for smaller browser windows at set points (for mobile).
+* I would change the number of stars appearing depending on the product.
 
 ## Build process
 

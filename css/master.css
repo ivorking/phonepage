@@ -22,6 +22,13 @@ p {
   font-family: "Sample,Open Sans,sans-serif";
 }
 
+#para64, #para256 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
 .leftcolumn, .rightcolumn {
   width: 48%;
   margin: 2%;
@@ -58,7 +65,7 @@ td img {
   object-fit: cover;
 }
 
-.capacityimage {
+.capacityimage64, .capacityimage256 {
   width: 45px;
   height: 45px;
   border-radius: 20%;
@@ -66,9 +73,16 @@ td img {
   border: 1px solid #ccc;
   background-color: #f4f4f4;
   color: #000;
+  display: table;
 }
 
 @font-face {
   font-family: "Sample,Open Sans,sans-serif";
   src: url("../fonts/sample-light.woff") format("opentype");
+}
+
+#upfrontcost, #monthlycost {
+  color: #e60000;
+  font-size: 22px;
+  line-height: 1.2;
 }
