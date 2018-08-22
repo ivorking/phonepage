@@ -74,6 +74,7 @@ td img {
   background-color: #f4f4f4;
   color: #000;
   display: table;
+  margin-right: 8px;
 }
 
 @font-face {
@@ -94,6 +95,7 @@ td img {
   border-radius: 20%;
   position: relative;
   border: 1px solid #ccc;
+  margin-right: 8px;
 }
 
 .colourgrey {
@@ -103,6 +105,7 @@ td img {
   border-radius: 20%;
   position: relative;
   border: 1px solid #ccc;
+  margin-right: 8px;
 }
 
 .colourblack {
@@ -112,3 +115,5 @@ td img {
   border-radius: 20%;
   position: relative;
   border: 1px solid #ccc;
+  margin-right: 8px;
+}
