@@ -86,3 +86,29 @@ td img {
   font-size: 22px;
   line-height: 1.2;
 }
+
+.colourbeige {
+  background-color: rgb(248, 231, 220);
+  width: 45px;
+  height: 45px;
+  border-radius: 20%;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.colourgrey {
+  background-color: rgb(225, 226, 227);
+  width: 45px;
+  height: 45px;
+  border-radius: 20%;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.colourblack {
+  background-color: rgb(35, 35, 36);
+  width: 45px;
+  height: 45px;
+  border-radius: 20%;
+  position: relative;
+  border: 1px solid #ccc;
