@@ -55,6 +55,10 @@ p {
   text-align: right;
 }
 
+#wrapcontainer {
+  margin-top: 20px;
+}
+
 td img {
   width: 202px;
   height: 415px;
@@ -160,7 +164,7 @@ td img {
   #tablewrapper td {
     text-align: center;
     vertical-align: initial;
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   .leftcolumn {
@@ -185,7 +189,6 @@ td img {
 
   .leftcolumn {
     margin: auto;
-    align: contents;
     width: 100%;
   }
 

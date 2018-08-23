@@ -14,20 +14,34 @@
 
 ### Notes on solution
 
-The company website was used as a reference for some aspects of this page, where it was necessary to achieve an exact match to the brief. This was so the task could be completed quickly. Copying source code fromm the company website was kept to a minimum to keep the exercise interesting for everyone concerned.
+The company website was used as a reference for some aspects of this page, where it was necessary to achieve an exact match to the brief. This was so the task could be completed quickly. 
 
 * For the sake of speed and simplicity, a single page JS, HTML, CSS, jQuery solution has been selected. I have minimised the use of additional libraries and frameworks in the interests of time.
-* I have used a simple liquid layout approach. I have avoided fixed widths. This means the page won't render exactly as per the provided reference image, but it will more easily resize for different screen sizes.
+* I have used a simple liquid layout approach. I have avoided fixed widths. This means the page won't render exactly as per the provided reference image, but it will more easily resize for different screen sizes (some smaller screen sizes included in CSS).
 * See console log and in-code comments for details of the solution.
 
-### Features I would add with additional time
+### Features I would add with more time
 * This solution could be created as a React component, for integration into a larger app/website (this would be the recommended approach). This could also utilise a node.js server for the phone data.
 * If using React I would rewrite the jQuery as pure JS selector statements.
-* Ordinarily I would incorporate bootstrap for CSS styling, but for simplicity I did not implement Bootstrap here.
-* For exact reproduction of relative element positions I would use a more time consuming fixed width layout, with changes for smaller browser windows at set points (for mobile).
+* Ordinarily I would incorporate bootstrap/reactstrap for CSS styling, but for simplicity I did not implement Bootstrap here.
+* For exact reproduction of relative positions I would use a more time consuming fixed width layout.
 * I would change the number of stars appearing depending on the product.
 
 ## Build process
+
+No extensive build process was used due to this being a relatively small task. However, it did include:
+
+* Initial layout and design using a liquid layout with divs and tables, referring to Chrome Dev Tools and using Pesticide plugins for accuracy.
+* Code quality checking & review - ESLint was used for this.
+* Version control via GitHub.
+* Check that all commenting is in place and redundant or commented out code removed.
+* Final browser checking - responsive design, other browsers.
+
+If this was part of a larger project, my build process would have included:
+* Initial timeline, project management aspects.
+* Unit testing - would ordinarily include tests for expected outcomes (using e.g. Jasmine, Mocha, Jest)
+* Minification of key libraries used (e.g. jQuery).
+* Checking other aspects - optimising load times, security of libraries used.
 
 ## Copyright
 
