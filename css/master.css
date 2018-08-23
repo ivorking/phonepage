@@ -23,10 +23,12 @@ p {
 }
 
 #para64, #para256 {
-  display: table-cell;
   text-align: center;
-  vertical-align: middle;
-  display: table-cell;
+  line-height: 0.7;
+}
+
+#choicetext, #sizetext {
+  font-weight: bold;
 }
 
 .leftcolumn, .rightcolumn {
@@ -37,12 +39,6 @@ p {
 
 .rightcontentsbox {
   margin: 2%;
-}
-
-#wrapcontainer {
-  /* height:100%;
-  width: 100%; */
-  /* display: grid; */
 }
 
 #tablewrapper {
@@ -73,8 +69,6 @@ td img {
   border: 1px solid #ccc;
   background-color: #f4f4f4;
   color: #000;
-  display: table;
-  margin-right: 8px;
 }
 
 @font-face {
@@ -82,7 +76,13 @@ td img {
   src: url("../fonts/sample-light.woff") format("opentype");
 }
 
+@font-face {
+  font-family: "Sample-Bold,Open Sans,sans-serif";
+  src: url("../fonts/sample-bold.woff") format("opentype");
+}
+
 #upfrontcost, #monthlycost {
+  font-family: "Sample-Bold,Open Sans,sans-serif";
   color: #e60000;
   font-size: 22px;
   line-height: 1.2;
@@ -110,9 +110,93 @@ td img {
   background-color: rgb(35, 35, 36);
 }
 
-.colourgreyborder, .coloursilverborder, .colourgoldborder, .border64, .border256 {
+.colourgreyborder, .coloursilverborder, .colourgoldborder {
   border: 2px solid #00596a;
   border-radius: 24%;
   padding: 2px;
   border-color: white;
+}
+
+.border64, .border256 {
+  border: 2px solid #00596A;
+  border-radius: 24%;
+  padding: 2px;
+  border-color: white;
+}
+
+#vlcell {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-color: #CDCDCD;
+}
+
+#prices {
+  margin-top: 40px;
+  background-color: #F4F4F4;
+}
+
+#prices p {
+  margin-left: 19px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+#rightcell {
+  width: 80%;
+}
+
+/* settings for smaller screen widths */
+
+@media only screen and (max-width: 800px) {
+
+  #tablewrapper {
+    margin: auto;
+  }
+
+  .rightcolumn {
+    display: contents;
+  }
+
+  #tablewrapper td {
+    text-align: center;
+    vertical-align: initial;
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 675px) {
+
+  #tablewrapper {
+    margin: auto;
+    display: block;
+  }
+
+  /* .leftcolumn {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    display: contents;
+  } */
+
+  body {
+    display: block;
+  }
+
+  .rightcolumn {
+    display: contents;
+  }
+
+  .leftcolumn {
+    margin: auto;
+    align: contents;
+  }
+
+  #tablewrapper td {
+    text-align: center;
+    vertical-align: initial;
+    padding-top: 30px;
 }

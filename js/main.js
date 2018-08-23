@@ -51,6 +51,10 @@ const updatePrices = () => {
   }
 }
 
+// render defaults
+setColour("grey");
+$('.border64').css("border-color", "#3C676E");
+
 // check to see if any buttons have been clicked and update DOM accordingly
 
 $('.colourgold').on('click', function () {
@@ -76,14 +80,16 @@ $('.colourgrey').on('click', function () {
 
 $('.capacityimage64').on('click', function () {
   currentChoice.memory = "64GB";
-  $('.capacityimage64').css("border-color", "#3C676E");
-  $('.capacityimage256').css("border-color", "white");
+  $('#sizetext').text(currentChoice.memory);
+  $('.border64').css("border-color", "#3C676E");
+  $('.border256').css("border-color", "white");
   updatePrices();
 });
 
 $('.capacityimage256').on('click', function () {
   currentChoice.memory = "256GB";
-  $('.capacityimage256').css("border-color", "#3C676E");
-  $('.capacityimage64').css("border-color", "white");
+  $('#sizetext').text(currentChoice.memory);
+  $('.border256').css("border-color", "#3C676E");
+  $('.border64').css("border-color", "white");
   updatePrices();
 });

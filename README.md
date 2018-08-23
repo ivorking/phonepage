@@ -17,15 +17,14 @@
 The company website was used as a reference for some aspects of this page, where it was necessary to achieve an exact match to the brief. This was so the task could be completed quickly. Copying source code fromm the company website was kept to a minimum to keep the exercise interesting for everyone concerned.
 
 * For the sake of speed and simplicity, a single page JS, HTML, CSS, jQuery solution has been selected. I have minimised the use of additional libraries and frameworks in the interests of time.
-* I have used a simple liquid layout approach.
-* I have used a font approximation to match the font used (which may be proprietary). Ordinarily I would simply ask the designer which font was used.
+* I have used a simple liquid layout approach. I have avoided fixed widths. This means the page won't render exactly as per the provided reference image, but it will more easily resize for different screen sizes.
 * See console log and in-code comments for details of the solution.
 
 ### Features I would add with additional time
 * This solution could be created as a React component, for integration into a larger app/website (this would be the recommended approach). This could also utilise a node.js server for the phone data.
 * If using React I would rewrite the jQuery as pure JS selector statements.
 * Ordinarily I would incorporate bootstrap for CSS styling, but for simplicity I did not implement Bootstrap here.
-* For exact reproduction of element positions I would use a more time consuming fixed width layout, with changes for smaller browser windows at set points (for mobile).
+* For exact reproduction of relative element positions I would use a more time consuming fixed width layout, with changes for smaller browser windows at set points (for mobile).
 * I would change the number of stars appearing depending on the product.
 
 ## Build process
