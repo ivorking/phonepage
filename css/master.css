@@ -88,32 +88,31 @@ td img {
   line-height: 1.2;
 }
 
-.colourbeige {
-  background-color: rgb(248, 231, 220);
+.colourgold, .coloursilver, .colourgrey {
   width: 45px;
   height: 45px;
   border-radius: 20%;
   position: relative;
   border: 1px solid #ccc;
-  margin-right: 8px;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), transparent 30%, rgba(0, 0, 0, 0.2));
+}
+
+.colourgold {
+  background-color: rgb(248, 231, 220);
+}
+
+.coloursilver {
+  background-color: rgb(225, 226, 227);
 }
 
 .colourgrey {
-  background-color: rgb(225, 226, 227);
-  width: 45px;
-  height: 45px;
-  border-radius: 20%;
-  position: relative;
-  border: 1px solid #ccc;
-  margin-right: 8px;
+  background-color: rgb(35, 35, 36);
 }
 
-.colourblack {
-  background-color: rgb(35, 35, 36);
-  width: 45px;
-  height: 45px;
-  border-radius: 20%;
-  position: relative;
-  border: 1px solid #ccc;
-  margin-right: 8px;
+.colourgreyborder, .coloursilverborder, .colourgoldborder, .border64, .border256 {
+  border: 2px solid #00596a;
+  border-radius: 24%;
+  padding: 2px;
+  border-color: white;
 }

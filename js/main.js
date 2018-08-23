@@ -1,9 +1,6 @@
 // check JS running
 console.log("javascript connected");
 
-// declare default status variables
-var currentChoice = "094364";
-
 // check jQuery running
 if (jQuery) {
   console.log("jquery working");
@@ -11,49 +8,62 @@ if (jQuery) {
   console.log("jquery not working");
 }
 
-// render default status
-$('#currentimage')
+// set global variables
+var currentChoice = {
+  colour: "Grey",
+  size: "64GB",
+  upfront: "",
+  monthly: ""
+}
 
-$(document).ready(function() {
+// define functions
 
+const setColour = (setNow) => {
+  currentChoice.colour = setNow;
+  let setString = ".colour" + setNow + "border";
+  $(setString).css("border-color", "#3C676E");
+  if (setNow != "Space Grey") {
+    $('.colourgreyborder').css("border-color", "white");
+  }
+  if (setNow != "Gold") {
+    $('.colourgoldborder').css("border-color", "white");
+  }
+  if (setNow != "Silver") {
+    $('.coloursilverborder').css("border-color", "white");
+  }
+}
 
-  // check to see if any buttons have been clicked and update accordingly
-  $('.colourbeige').on('click', function () {
-    console.log('clicked');
-  });
-    // if (pageCounter == 2) {
+const updatePrices = () => {
+  for (let i = 0; i < 6; i++) {
+    if ((currentChoice.colour == dataStore.deviceSummary[i].colourName) && (currentChoice.size == dataStore.deviceSummary[i].memory)) {
+      currentChoice.upfront = dataStore.deviceSummary[i].priceInfo.hardwarePrice.oneOffDiscountPrice.gross;
+      currentChoice.monthly = dataStore.deviceSummary[i].priceInfo.bundlePrice.monthlyPrice.gross;
+      $('#upfrontcost').text(currentChoice.upfront);
+      $('#monthlycost').text(currentChoice.monthly);
+      return;
+    }
+  }
+}
 
-    //   formData.telephone = $('#firstbox').val();
-    //   formData.emailaddress = $('#secondbox').val();
+// check to see if any buttons have been clicked and update accordingly
 
-    //   // check not empty fields before submitting
+$('.colourgold').on('click', function () {
+  $('#currentimage').attr("src", "images/Apple_iPhone_8_Gold-full-product-front.png");
+  $('#choicetext').text("Gold");
+  setColour("Gold");
+  updatePrices()
+});
 
-    //   if ((formData.telephone) && (formData.emailaddress)) {
-    //     console.log("form submitted, with the following data:", formData);
-    //     window.confirm('Form submitted!');
-    //   }
+$('.coloursilver').on('click', function () {
+  $('#currentimage').attr("src", "images/Apple_iPhone_8_Silver_WS2-full-product-front.png");
+  $('#choicetext').text("Silver");
+  setColour("Silver");
+  updatePrices();
+});
 
-    // } else {
-
-    //   formData.firstname = $('#firstbox').val();
-    //   formData.lastname = $('#secondbox').val();
-
-    //   // check not empty fields before moving to page 2
-
-    //   if ((formData.firstname) && (formData.lastname)) {
-
-    //     $('#first').css("background-color", "#AAAAAA");
-    //     $('#second').css("background-color", "#717171");
-
-    //     $('#firstbox').val("");
-    //     $('#secondbox').val("");
-
-    //     // update the input form for page 2
-    //     $('#firsttext').text("Telephone number:");
-    //     $('#secondtext').text("Email address:");
-
-    //     console.log('switching to input form page 2');
-    //     pageCounter = 2;
-    //   }
-    // }
+$('.colourgrey').on('click', function () {
+  $('#currentimage').attr("src", "images/Apple_iPhone_8_Space_Grey_WS2-full-product-front.png");
+  $('#choicetext').text("Space Grey");
+  setColour("Space Grey");
+  updatePrices();
 });
